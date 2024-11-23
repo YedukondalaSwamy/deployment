@@ -3,14 +3,14 @@ kind: Deployment
 metadata:
   name: nginx-deply
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels: 
-      app: nginx-depl
+      app: nginx-deply
   template:
     metadata:
       labels:
-        app: nginx-depl
+        app: nginx-deply
     spec:
       containers:
       - name: nginx-deply
